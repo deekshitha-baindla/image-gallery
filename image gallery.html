@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f4f6f8;
+            padding: 20px;
+            text-align: center;
+        }
+        nav{
+            margin-bottom: 15px;
+        }
+        h1{
+            margin-bottom: 10px;
+        }
+        button{
+            padding:10px 18px;
+            margin: 5px;
+            border-radius: 20px;
+            background-color: #2c3e50;
+            border: none;
+            cursor: pointer;
+            color:white
+        }
+        input{
+            border-radius: 20px;
+            height:25px;
+            padding:8px
+
+        }
+        div{  
+            display: inline;
+            margin:10px;
+        }
+        img{
+           width:250px;
+           height:180px;
+           object-fit: cover;
+           border-radius: 8px;
+           transition: transform 0.3 ease;
+           margin-bottom: 10px;
+           
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            img {
+                 width: 90%;
+                    height: auto;
+                 }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Image Gallery</h1>
+    <button>All</button>
+    <button>Nature</button>
+    <button>Travel</button>
+    <button>Food</button>
+    <button>Animals</button>
+    <button>Technology</button>
+    <button>Sports</button>
+    <button>Fashion</button>
+    <button>Car</button>
+    <button>Art</button>
+    <input type="text" placeholder="Search Image....">
+    </nav>
+    <div class="gallery">
+    <div class="fashion"><img src="https://www.moontara.in/cdn/shop/collections/all-dresses-moontara.jpg?v=1723488451&width=2400" alt=""></div>
+    <div class="nature"><img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" alt=""></div>
+    <div class="car"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT993UklIsMOmguuDeS7FUCCnFpSCsBh0S8PA&s" alt=""></div>
+    <div class="technology"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLj68sDmmgBUzChiFW3AHpPpiXhYbkAZjIng&s" alt=""></div>
+    <div class="travel"><img src="https://static.vecteezy.com/system/resources/thumbnails/036/054/418/small/ai-generated-landing-a-plane-against-a-golden-sky-at-sunset-passenger-aircraft-flying-up-in-sunset-light-travelling-and-business-concept-photo.jpg" alt=""></div>
+    <div class="food"><img src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/blogs/indian-food-nutrition.jpg" alt=""></div>
+    <div class="technology"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKz0o-h7a8v9qV8JEj80Hnp-72n6T571nbAg&s" alt=""></div>
+    <div class="nature"><img src="https://static.vecteezy.com/system/resources/thumbnails/049/855/347/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" alt=""></div>
+    <div class="travel"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyYxL8jG_0E775dxrMx9TRqAt9gX05z3XoA&s" alt=""></div>
+    <div class="food"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXbAuDX6ncsg76VTk24lVYYHIQrTzlVBHDA&s" alt=""></div>
+    <div class="art"><img src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/62041/261586/1607601332291_IMG_20201128_134909__85629.1687170945.jpg?c=2" alt=""></div>
+    <div class="travel"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRTP61bplkI2TG5KwFSodkpx1o1bG2lX9KGw&s" alt=""></div>
+    <div class="car"><img src="https://www.usnews.com/cmsmedia/d3/7a/b78ce34c4bbf954aa096cb7995e5/250308-all-new-nissan-leaf-dynamic-pictures-01.jpg" alt=""></div>
+    <div class="fashion"><img src="https://www.bonsoir.co.in/cdn/shop/articles/Indo_Western_2_c7e03a73-154c-4c84-9209-c2f5035cc4b9.png?v=1728026936" alt=""></div>
+    <div class="sports"><img src="https://c.files.bbci.co.uk/fae4/live/d58177b0-40b7-11f0-aac2-37f04d2f01bc.jpg" alt=""></div>
+    <div class="art"><img src="https://artstreet.in/cdn/shop/products/915kqfXfUEL_512x512.jpg?v=1755503600" alt=""></div>
+    <div class="nature"><img src="https://media.istockphoto.com/id/1419410282/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.jpg?s=612x612&w=0&k=20&c=UHeb1pGOw6ozr6utsenXHhV19vW6oiPIxDqhKCS2Llk=" alt=""></div>
+    <div class="fashion"><img src="https://www.elahe.in/cdn/shop/files/MERAKI8_4_2048x.jpg?v=1707655421" alt=""></div>
+    <div class="sports"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaK1vvzy8mJJjACDyydHfAdLQOjIlBk2WG4w&s" alt=""></div>
+    <div class="car"><img src="https://toykoo.in/cdn/shop/files/20251001_184733-Photoroom_600x.jpg?v=1759346992" alt=""></div>
+    <div class="art"><img src="https://www.imagicart.in/wp-content/uploads/Acrylic-painting-on-canvas-Ganesha-1-400x400_c.jpg" alt=""></div>
+    <div class="technology"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqVCE-R6b7fyjx1A-AhiGNb8L6F9HiTI0C7A&s" alt=""></div>
+    <div class="fashion"><img src="https://img.freepik.com/free-photo/high-fashion-portrait-young-elegant-blonde-woman-black-wool-hat-wearing-oversize-white-fringe-poncho-with-long-grey-dress_273443-3799.jpg" alt=""></div>
+    <div class="animals"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcK5VoNWbUHwxWAVEuGHWwNiKSJWEZb11NiQ&s" alt=""></div>
+    <div class="food"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_-95vGUW5mrsNptS4ufJXRFIWz7SzTvFRGg&s" alt=""></div>
+    <div class="car"><img src="https://toykoo.in/cdn/shop/files/snapedit_1748207476771_8_600x.jpg?v=1748207550" alt=""></div>
+    <div class="art"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCJ65F2_QnAOM8r4wFAmbgvHi8XiaodDM2Yg&s" alt=""></div>
+    <div class="fashion"><img src="https://t3.ftcdn.net/jpg/02/66/04/36/360_F_266043654_d8XqhGWOnhhmIfjmUfe0ufB060Wr5vDY.jpg" alt=""></div>
+    <div class="nature"><img src="https://static9.depositphotos.com/1000276/1100/i/450/depositphotos_11008977-stock-photo-mountain-magic-landscape.jpg" alt=""></div>
+    <div class="fashion"><img src="https://m.media-amazon.com/images/G/31/img21/shoes/2024/SS24/MS/Tile1/Bacca_Bucci_copy_1_978x1364._SX564_QL85_FMpng_.png" alt=""></div>
+    <div class="animals"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3DciD29RuJEf-w28m61Ri90BoIypDf2zPLg&s" alt=""></div>
+    <div class="car"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWtIlw4sS2cCengKFQJHBovOTJvJOg9LcW2Q&s" alt=""></div>
+    <div class="art"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcFqtdvm72FQFWn4eXSR1Zl2w-0fWIjOKfow&s" alt=""></div>
+    <div class="travel"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_nN2IxaFP1fkdbJPQVa0YeD2rfQOQha4wkw&s" alt=""></div>
+    <div class="sports"><img src="https://imgresizer.tntsports.io/unsafe/2560x1440/filters:format(jpeg)/origin-imgresizer.tntsports.io/2025/03/11/image-2c33751b-72bd-4b98-9cc2-8873bbd18247-85-2560-1440.jpeg" alt=""></div>
+    <div class="technology"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToypAc4_8mKHGsIpV7DOW4HsLuTOVy4LKspQ&s" alt=""></div>
+    <div class="animals"><img src="https://cdn.pixabay.com/photo/2017/10/20/10/58/elephant-2870777_1280.jpg" alt=""></div>
+    <div class="art"><img src="https://m.media-amazon.com/images/I/91eXXSkoUWL._AC_UF350,350_QL80_.jpg" alt=""></div>
+    <div class="car"><img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Nissan/Magnite/11793/1760004620755/front-left-side-47.jpg?impolicy=resize&imwidth=480" alt=""></div>
+    <div class="fashion"><img src="https://i0.wp.com/www.weddingforward.com/wp-content/uploads/2025/02/indian-wedding-dresses-colored-israniphotography.jpg?fit=1080%2C1350&quality=70&ssl=1" alt=""></div>
+    <div class="food"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyrQe_3y27UhwkxGhuh7Sngv-rh2-jHYJBKg&s" alt=""></div>
+    <div class="art"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVIBa25MmR5MJ1h2e04o9PLTGdT-t9HQHPkA&s" alt=""></div>
+    <div class="animals"><img src="https://nationalzoo.si.edu/sites/default/files/styles/square_large/public/2025-01/20241030-817A8773-16RP.jpg?h=f6ccde7b&itok=m27pXZwZ" alt=""></div>
+    <div class="sports"><img src="https://image-service.onefootball.com/transform?w=335&h=188&dpr=2&image=https%3A%2F%2Ffilebucket.onefootball.com%2F2026%2F2%2F1770856868023-blob" alt=""></div>
+    <div class="nature"><img src="https://www.thehosteller.com/_next/image/?url=https%3A%2F%2Fstatic.thehosteller.com%2Fhostel%2Fimages%2Ffeat.jpg%2Ffeat-1720738119071.jpg&w=2048&q=75" alt=""></div>
+    <div class="technology"><img src="https://imageio.forbes.com/specials-images/imageserve/61d52d4e3a76ed81ac034ea8/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" alt=""></div>
+    <div class="fashion"><img src="https://m.media-amazon.com/images/G/31/img21/shoes/2023/Winterflip/WS/Tile/Bata_8._SX564_QL85_FMpng_.png" alt=""></div>
+    <div class="animals"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSusYvItnzbIrW3eMEBNqlzg9cvWEOHm4v1Q&s" alt=""></div>
+    <div class="art"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Raja_Ravi_Varma_-_Woman_Holding_a_Fruit_-_Google_Art_Project.jpg/250px-Raja_Ravi_Varma_-_Woman_Holding_a_Fruit_-_Google_Art_Project.jpg" alt=""></div>
+    <div class="car"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3j-RVEWKChCmFFH2Rbrl7Rttwvv9ClQBBUw&s" alt=""></div>
+    <div class="travel"><img src="https://www.outsideonline.com/wp-content/uploads/2018/06/26/baja-reader-photo-lead_h.jpg" alt=""></div>
+    <div class="art"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHB3jNBsfxyYxQiTYW4FX4IaWX_XH4eSMdfg&s" alt=""></div>
+    <div class="nature"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqS1ItXoyfTo_hFnHfyMalFCKpfjJCcb5vDg&s" alt=""></div>
+    <div class="food"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPRKGeMstIZbp32iyiVk8FtraGv4UhEoJ1fg&s" alt=""></div>
+    <div class="fashion"><img src="https://m.media-amazon.com/images/G/31/img2020/fashion/WomensApparel2024/p0SBC/Sarees._CB558288617_.png" alt=""></div>
+    <div class="animals"><img src="https://www.calgaryzoo.com/wp-content/uploads/2023/09/DSC_4349-1200x0-c-default.jpg" alt=""></div>
+    <div class="nature"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREE6wW8vv5YNZ78ZqI9B2vMR6SfeQGEOcafA&s" alt=""></div>
+    <div class="art"><img src="https://ritzyfinearts.com/wp-content/uploads/2022/07/Untitled-design-17.png" alt=""></div>
+    <div class="sports"><img src="https://t4.ftcdn.net/jpg/00/17/33/59/360_F_17335975_wezHs72ORL3CY2dFLVi9XtLx4XDOgZBT.jpg" alt=""></div>
+    <div class="food"><img src="https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg?semt=ais_user_personalization&w=740&q=80" alt=""></div>
+    <div class="fashion"><img src="https://m.media-amazon.com/images/G/31/img22/Meghana/SSFlip/premium/spb_1_352x580._CB792410991_.png" alt=""></div>
+    <div class="animals"><img src="https://static.vecteezy.com/system/resources/thumbnails/051/953/787/small/a-majestic-lion-rests-on-a-rock-under-dramatic-clouds-showcasing-its-powerful-presence-photo.jpg" alt=""></div>
+    <div class="fashion"><img src="https://m.media-amazon.com/images/G/31/img2020/fashion/WomensApparel2024/P0PREMIUM/True_Browns._CB796416313_.png" alt=""></div>
+    <div class="sports"><img src="https://goqii.com/blog/wp-content/uploads/6-Health-Benefits-of-Playing-Sports-1024x683.jpg" alt=""></div>
+    <div class="art"><img src="https://modernartgallery.co.in/cdn/shop/files/pai_826868e9-c655-462a-9402-78502f59f08d_525x280.jpg?v=1657131956" alt=""></div>
+
+    </div>
+<script src="./image_gallery .js"></script>
+</body>
+</html>
